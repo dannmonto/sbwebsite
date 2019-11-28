@@ -17,7 +17,7 @@
 body {
   color: black;
   margin: 0;
-  font: 1em/1.5 "Helvetica Neue" Helvetica, Arial, sans-serif;
+  font: 1em/1.5% "Helvetica Neue", Helvetica, Arial, sans-serif;
   background:
               radial-gradient(circle at center, #fff, transparent 90%),
               linear-gradient(0deg, #fff, transparent 20%),
@@ -34,7 +34,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family:  "Helvetica Neue" Helvetica, Arial, sans-serif;
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Main Styles */
@@ -111,3 +111,10 @@ h5 {
 
 
 /* Media Queries */
+
+@media (max-height: 768px) {
+
+  .recent-work {
+    font-weight: 200;
+  }
+}
