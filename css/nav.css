@@ -1,6 +1,6 @@
 /* Navigation and logo */
 
-.menu-header {
+.main-header {
   font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .5em;
   text-align: center;
@@ -10,6 +10,7 @@
 * {
   box-sizing: border-box;
 }
+
 .nav,
 .home-nav,
 .gallery-nav,

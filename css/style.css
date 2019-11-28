@@ -40,29 +40,30 @@ h5 {
 /* Main Styles */
 
 .main-header {
-  height: 300px;
   margin-top: 10px;
   text-align: center;
+  height: 450px;
 
 }
 
-.santiago-title {
+.main-header h1 {
   font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 5rem;
   text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
   letter-spacing: 0.9rem;
-  margin-top: 100px;
-
+  margin-top: 140px;
+flex-direction: column-reverse;
 }
 
 
 .motto {
   display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   border-bottom: 2px solid;
-  margin-top: -20px;
   line-height: 1.4;
   font-weight: 200;
+  margin-top: 15px;
 }
 
 .primary-content {
@@ -74,7 +75,6 @@ h5 {
   padding-bottom: 1px;
   border-bottom: 2px solid black;
   margin-bottom: 5px;
-  margin-top: -10px;
 }
 
 .zda {
