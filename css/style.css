@@ -19,7 +19,7 @@ body {
   margin: 0;
   font: 1em/1.5 "Helvetica Neue" Helvetica, Arial, sans-serif;
   background:
-              radial-gradient(circle at top right, #fff, transparent 60%),
+              radial-gradient(circle at center right, #fff, transparent 60%),
               linear-gradient(0deg, #fff, transparent 20%),
               #fff url(../img/main-background.jpg) no-repeat center;
   background-size: cover;
