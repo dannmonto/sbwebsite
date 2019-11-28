@@ -1,0 +1,84 @@
+/* Navigation and logo */
+
+.menu-header {
+  font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .5em;
+  text-align: center;
+  margin-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.nav,
+.home-nav,
+.gallery-nav,
+.about-nav,
+.contact-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-right: 1%;
+  margin-left: 10%;
+  font-size: 1.2rem;
+  margin-top: -16.5px;
+}
+
+/* Navigation list */
+ul {
+  padding: 5px 0 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  position: relative;
+}
+
+ul ul {
+  text-align: left;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 100%;
+
+}
+
+#photos-nav,
+#videos-nav {
+  border-style: none;
+  line-height: 1.5;
+
+}
+
+li:hover ul {
+  display: block;
+
+
+}
+/* End of Navigation list */
+
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid black;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.nav a:visited {
+  color: none;
+}
+
+.nav a:active {
+  color: tomato;
+}
+.site-logo img {
+  display: flex;
+  max-width: 120px;
+  margin: 10px 10px 0;
+}

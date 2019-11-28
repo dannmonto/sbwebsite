@@ -1,0 +1,58 @@
+/* Web fonts */
+
+@font-face {
+  font-family: "Abolition Regular";
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* Base styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue" Helvetica, Arial, sans-serif;
+  background:
+              radial-gradient(circle at top right, #fff, transparent 60%),
+              linear-gradient(0deg, #fff, transparent 20%),
+              #fff url(../img/main-background.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* Main Styles */
+
+.main-header {
+  height: 800px;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.santiago-title {
+  font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 5rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  letter-spacing: 0.9rem;
+  margin-top: 100px;
+
+}
+
+
+.motto {
+  display: inline-block;
+  font-size: 1.5rem;
+  border-bottom: 3px solid;
+  margin-top: -20px;
+  line-height: 1.4;
+}
+
+/* Pseudo-classes ------------------ */
+
+
+/* Media Queries */
