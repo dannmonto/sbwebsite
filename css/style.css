@@ -25,10 +25,22 @@ body {
   background-size: cover;
 }
 
+
+h1 {
+  font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family:  "Helvetica Neue" Helvetica, Arial, sans-serif;
+}
+
 /* Main Styles */
 
 .main-header {
-  height: 800px;
+  height: 300px;
   margin-top: 10px;
   text-align: center;
 
@@ -47,9 +59,52 @@ body {
 .motto {
   display: inline-block;
   font-size: 1.5rem;
-  border-bottom: 3px solid;
+  border-bottom: 2px solid;
   margin-top: -20px;
   line-height: 1.4;
+  font-weight: 200;
+}
+
+.primary-content {
+  text-align: center;
+}
+
+.recent-work {
+  display: inline-block;
+  padding-bottom: 1px;
+  border-bottom: 2px solid black;
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+
+.zda {
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+.carmencalburean {
+  margin-top: -15px;
+
+}
+
+.carmencalburean a:visited {
+  color: transparent;
+  text-decoration: none;
+}
+
+.carmencalburean a {
+  color: black;
+}
+
+.carmencalburean a:hover {
+  color: tomato;
+}
+
+.main-zda-img {
+  max-width: 90%;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 0 2px 8px;
 }
 
 /* Pseudo-classes ------------------ */
