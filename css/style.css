@@ -59,31 +59,47 @@ flex-direction: column-reverse;
 .motto {
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  border-bottom: 2px solid;
+  font-size: 1.3rem;
+  border-bottom: 1.5px solid;
   line-height: 1.4;
   font-weight: 200;
   margin-top: 15px;
+  padding: 0 25px 2px;
 }
-
+/* Primary Content */
 .primary-content {
   text-align: center;
 }
 
+.primary-content h3 {
+  display: inline-block;
+  font-weight: 300;
+  border: 2px solid black;
+  padding: 12px;
+  margin-top: 20px;
+
+}
+/* End of Primary Content */
+
 .recent-work {
   display: inline-block;
-  padding-bottom: 1px;
-  border-bottom: 2px solid black;
-  margin-bottom: 5px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+
+t-border {
+  border-top: 2px solid #dfe2e6;
 }
 
 .zda {
-  margin-bottom: 20px;
-  margin-top: -10px;
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .carmencalburean {
-  margin-top: -15px;
+  margin-top: 25px;
+  font-weight: 400;
 
 }
 
