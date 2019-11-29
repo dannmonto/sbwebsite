@@ -52,7 +52,6 @@ h5 {
   text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
   letter-spacing: 0.9rem;
   margin-top: 140px;
-flex-direction: column-reverse;
 }
 
 
@@ -62,7 +61,7 @@ flex-direction: column-reverse;
   font-size: 1.3rem;
   border-bottom: 1.5px solid;
   line-height: 1.4;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 15px;
   padding: 0 25px 2px;
 }
@@ -110,10 +109,21 @@ t-border {
 
 .carmencalburean a {
   color: black;
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+     -o-transition:.5s;
+     -ms-transition:.5s;
+     -moz-transition:.5s;
+     -webkit-transition:.5s;
+     /* ...and now for the proper property */
+     transition:.5s;
 }
 
 .carmencalburean a:hover {
-  color: tomato;
+  color: rgb(214, 44, 14);
+  
 }
 
 .main-zda-img {
@@ -128,9 +138,15 @@ t-border {
 
 /* Media Queries */
 
-@media (max-height: 768px) {
-
-  .recent-work {
-    font-weight: 200;
+@media (max-width: 768px) {
+  .main-header h1 {
+    letter-spacing: 0.6rem;
+    font-size: 3rem;
+    max-width: 50;
+  }
+}
+@media (max-width: 476px) {
+  .main-header h1 {
+  letter-spacing: 0.3rem;
   }
 }
