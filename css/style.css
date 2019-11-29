@@ -69,7 +69,7 @@ h5 {
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  border-bottom: 1.5px solid;
+  border-bottom: 1.4px solid #fff;
   line-height: 1.4;
   font-weight: 300;
   margin-top: 15px;
@@ -155,9 +155,27 @@ h5 {
     font-size: 3rem;
     max-width: 50;
   }
+  .motto {
+    font-size: .8rem;
+    display: inline-block
+  }
+  .main-zda-img {
+    max-width: 90%;
+  }
 }
 @media (max-width: 476px) {
   .main-header h1 {
-  letter-spacing: 0.3rem;
+  line-height: 1;
+  font-size: 3rem;
+  margin-top: 80px;
+
   }
+  .motto {
+    display: inline-block
+    font-size: .6rem;
+    margin-top: -10px;
+    padding-bottom: 5px;
+    border-bottom: .5px solid;
+  }
+
 }
