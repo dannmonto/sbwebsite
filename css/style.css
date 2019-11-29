@@ -18,11 +18,13 @@ body {
   color: black;
   margin: 0;
   font: 1em/1.5% "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background:
+  /* background:
               radial-gradient(circle at center, #fff, transparent 50%),
               linear-gradient(0deg, #fff, transparent 20%),
-              #fff url(../img/main-background.jpg) no-repeat center;
-  background-size: cover;
+              #fff url(../img/background-photographie.jpg) no-repeat center;
+  background-size: cover; */
+  background-color: rgba(31, 29, 29, 0.959);
+
 }
 
 
@@ -40,25 +42,33 @@ h5 {
 /* Main Styles */
 
 .main-header {
-  margin-top: 10px;
   text-align: center;
   height: 450px;
-
+  /* background:
+              radial-gradient(circle at center, #fff, transparent 80%),
+              linear-gradient(0deg, #fff, transparent 20%),
+              #fff url(../img/background-photographie.jpg) no-repeat center;
+  background-size: cover; */
+  font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5em;
+  text-align: center;
 }
 
 .main-header h1 {
+  color: #fff;
   font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 5rem;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-  letter-spacing: 0.9rem;
+  text-shadow: 1px 1px rgba(255, 255, 255, .5);
+  letter-spacing: 1.3rem;
   margin-top: 140px;
 }
 
 
 .motto {
+  color: #fff;
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   border-bottom: 1.5px solid;
   line-height: 1.4;
   font-weight: 300;
@@ -72,8 +82,9 @@ h5 {
 
 .primary-content h3 {
   display: inline-block;
+  color: #fff;
   font-weight: 300;
-  border: 2px solid black;
+  border: 2px solid #fff;
   padding: 12px;
   margin-top: 20px;
 
@@ -81,19 +92,22 @@ h5 {
 /* End of Primary Content */
 
 .recent-work {
+  color: #fff;
   display: inline-block;
   padding-bottom: 18px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #fff;
   margin-bottom: 15px;
+  margin-top: 40px;
 }
 
-t-border {
-  border-top: 2px solid #dfe2e6;
+.t-border {
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
 }
 
 .zda {
-  margin-top: 5px;
+  margin-top: 40px;
   font-family: 'Times New Roman', Times, serif;
+  color: #fff;
 }
 
 .carmencalburean {
@@ -108,17 +122,15 @@ t-border {
 }
 
 .carmencalburean a {
-  color: black;
-    /* First we need to help some browsers along for this to work.
-     Just because a vendor prefix is there, doesn't mean it will
-     work in a browser made by that vendor either, it's just for
-     future-proofing purposes I guess. */
+  color: #fff;
+    /* Transition effect */
      -o-transition:.5s;
      -ms-transition:.5s;
      -moz-transition:.5s;
      -webkit-transition:.5s;
-     /* ...and now for the proper property */
      transition:.5s;
+     /* End of transition effect */
+
 }
 
 .carmencalburean a:hover {
@@ -129,8 +141,7 @@ t-border {
 .main-zda-img {
   max-width: 850px;
   border-radius: 15px;
-  border: 2px solid black;
-  box-shadow: 0 2px 8px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, .8);
 }
 
 /* Pseudo-classes ------------------ */

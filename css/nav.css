@@ -1,33 +1,30 @@
 /* Navigation and logo */
 
-.main-header {
-  font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: .5em;
-  text-align: center;
-  margin-top: 30px;
-}
 
 * {
   box-sizing: border-box;
 }
-
+body {
+  cursor: default;
+}
 .nav,
 .home-nav,
-.gallery-nav,
+.portfolio-nav,
+.clients-nav,
 .about-nav,
 .contact-nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding-right: 1%;
-  margin-left: 5%;
-  font-size: 1.2rem;
+  margin-left: 2%;
   margin-top: -16.5px;
+  cursor: pointer;
 }
 
-/* Navigation list */
+/* Navigation list - Subnavigation */
 ul {
-  padding: 5px 0 0;
+  padding-left: 10px;
   margin: 0;
 }
 
@@ -45,8 +42,7 @@ ul ul {
 
 }
 
-#photos-nav,
-#videos-nav {
+.sub-item {
   border-style: none;
   line-height: 1.5;
 
@@ -57,29 +53,47 @@ li:hover ul {
 
 
 }
-/* End of Navigation list */
+/* End of Navigation list - subnavigation*/
 
 
 .nav a {
-  color: black;
+  color: rgb(180, 180, 180);
   text-decoration: none;
-  padding-bottom: 3px;
-  border-bottom: 2px solid black;
+  /* border-bottom: 1px solid #fff; */
+  letter-spacing: .6em;
+  font-weight: 100;
+  font-size: .9rem;
+}
+
+.nav .current {
+  color: #fff;
 }
 
 .nav a:hover {
   color: #fff;
 }
 
+.portfolio-nav a:hover {
+  color: rgb(107, 107, 107);
+  cursor: crosshair;
+}
+
+.portfolio-nav li a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.portfolio-nav ul{
+  background-color: #272525;
+}
 .nav a:visited {
   color: none;
 }
 
-.nav a:active {
-  color: tomato;
-}
 .site-logo img {
   display: flex;
-  max-width: 120px;
-  margin: 10px 10px 0;
+  max-width: 130px;
+  margin-top: ;
+  padding: 10px;
+  filter: invert(100%);
 }
