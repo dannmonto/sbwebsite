@@ -93,7 +93,7 @@ li:hover ul {
 .site-logo img {
   display: flex;
   max-width: 130px;
-  margin-top: ;
+  margin-top: 0;
   padding: 10px;
   filter: invert(100%);
 }
