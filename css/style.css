@@ -18,7 +18,7 @@ body {
   cursor: default;
   color: #fff;
   margin: 0;
-  font: 1em/1.5% "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: rgba(31, 29, 29, 0.959);
 }
 h1,
@@ -29,16 +29,10 @@ h5 {
   font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* Main Styles */
-.main-header {
-  height: 180px;
-  margin-top: 10px
-}
 /* Title content */
 .santiago {
+  clear: both;
   height: 250px;
-  font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 0.5em;
-  margin-bottom: -50px;
   text-align: center;
 }
 
@@ -47,20 +41,21 @@ h5 {
   font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 5rem;
   text-shadow: 1px 1px rgba(255, 255, 255, .5);
-  letter-spacing: 1.3rem;
-  text-indent: 1.3rem;
+  letter-spacing: 0.25em;
+  text-indent: 0.25em;
   margin-top: 100px;
-  margin-bottom: 70px;
+  margin-bottom: 15px;
 }
 .motto {
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  padding: 0 15px 6px;
   border-bottom: 1.4px solid #fff;
-  line-height: 1.4;
+  line-height: 1;
   font-weight: 200;
   letter-spacing: 0.3rem;
-  padding-bottom: 5px;
+  
 }
 /* End of title content */
 
@@ -68,7 +63,6 @@ h5 {
 .primary-content {
   text-align: center;
 }
-
 .main-zda-img {
   max-width: 800px;
   border-radius: 2px;
@@ -82,7 +76,6 @@ h5 {
   .main-header h1 {
     font-size: 4em;
     display: inline-block;
-  
   }
 }
 @media (max-width: 768px) {
@@ -92,29 +85,14 @@ h5 {
     line-height: 1;
     font-size: 4rem;
     max-width: 100%;
-    text-align: center;
   }
   .motto {
-    font-size: .8rem;
-    display: inline-block
+    font-size: 1rem;
+    border-bottom-style: none;
+
   }
   .main-zda-img {
+    margin-top: 10px;
     max-width: 90%;
   }
-}
-@media (max-width: 476px) {
-  .main-header h1 {
-  line-height: 1;
-  font-size: 3rem;
-  margin-top: 80px;
-
-  }
-  .motto {
-    display: inline-block;
-    font-size: .6rem;
-    margin-top: -10px;
-    padding-bottom: 5px;
-    border-bottom: .5px solid;
-  }
-
 }

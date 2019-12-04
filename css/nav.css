@@ -1,78 +1,83 @@
-/* Header */
 /* Navigation menu and logo */
+
+/* Main header - contains logo and navigation */
+.main-header {
+  height: 100px;
+}
+/* Logo */
 .site-logo img {
+  float: left;
   display: flex;
-  max-width: 130px;
-  margin-top: 0;
-  padding: 10px;
+  max-width: 140px;
+  margin-left: 20px;
   filter: invert(100%);
 }
-.nav {
-  height: 40px;
-  line-height: 1;
-}
+/* Navigation menu */
 .nav .current {
   color: #fff;
 }
-
 .nav a:hover {
   color: #fff;
 }
 .nav a:visited {
   color: none;
 }
-
 .menu {
-  margin: 0 25px 0 0;
+  clear: right;
   display: flex;
   flex-direction: row;
   justify-content: right;
+  margin: 30px 30px 0 0;
 }
 .menu a {
+  display: flex;
   font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  clear: right;
   color: rgb(180, 180, 180);
   text-decoration: none;
-  margin: 0 10px;
-  letter-spacing: .6em;
+  letter-spacing: 0.3rem;
   font-weight: 100;
-  font-size: 1.1rem;
-  line-height: 1;
+  font-size: 1.2rem;
+  padding: 0 15px;
+  /* line-height: 1; */
 }
 .menu li {
   list-style-type: none;
 }
+/* Portfolio link */
 .has-children a {
   color: rgb(255, 94, 94);
 }
-
+.has-children a:hover {
+  color: rgb(255, 94, 94);
+}
 /*Subnavigation*/
 .sub-nav {
   display: none;
 }
-.has-children:hover {
-  background-color: rgb(39, 37, 37);
+/* Portfolio list */
+.has-children li a:hover {
+  color: #fff;
 }
-
+.has-children li a {
+  font-size: 1.1rem;
+}
 .has-children:hover > .sub-nav {
   display: flex;
   flex-direction: column;
   line-height: 1.7;
-  margin: 0;
   padding-inline: 0;
   background: rgb(39, 37, 37);
 }
-
 /* End subnavigation*/
 
 /* Hamburger menu */
 label {
+  float: right;
   margin: 0 40px 0 0;
   font-size: 2.5rem;
   line-height: 1;
   display: none;
   width: 26px;
-  float: right;
 }
 #toggle {
   display: none;
@@ -81,27 +86,34 @@ label {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .main-header {
+    margin-bottom: -20px;
+  }
+  .site-logo img {
+    max-width: 100px;
+    margin-top: 20px;
+  }
   label {
     display: block;
-    line-height: 1.7;
+    margin-top: 20px;
     font-size: 3rem;
     cursor: pointer;
   }
   .menu {
-    float: right;
+    display: none;
     text-align: right;
     width: 100%;
-    display: none;
+    background: rgba(39, 37,37, 0.8);
+    overflow: hidden;
+    position: relative;
+
     
   }
   .menu a {
     display: block;
     font-size: 1.6rem;
-    line-height: 1.7;
-    background: rgb(39, 37,37);
-    position: relative;
+    line-height: 1.6;
   }
-
   .sub-nav {
     display: block;
     width: 100%;
@@ -110,7 +122,8 @@ label {
     color: rgb(255, 94, 94);
   }
   .has-children li a {
-    color: rgb(180, 180, 180);
+    color: rgb(255, 94, 94);
+    font-size: 1.2rem;
   }
   #toggle:checked + .menu {
     display: block;
