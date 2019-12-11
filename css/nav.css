@@ -8,8 +8,8 @@
 .site-logo img {
   float: left;
   display: flex;
-  max-width: 140px;
-  margin-left: 20px;
+  max-width: 80px;
+  margin: 20px 0 0 20px;
   filter: invert(100%);
 }
 /* Navigation menu */
@@ -23,7 +23,7 @@
   color: none;
 }
 .menu {
-  clear: right;
+  clear: both;
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -38,35 +38,28 @@
   font-weight: 100;
   font-size: 1.2rem;
   padding: 0 15px;
-  /* line-height: 1; */
 }
 .menu li {
   list-style-type: none;
 }
-/* Portfolio link */
-.has-children a {
-  color: rgb(255, 94, 94);
+/* Home link and sub-nav*/
+.nav li ul {    /* This fixes the indentation of the sub-menu */
+  position: absolute;
+  z-index: 100; 
 }
-.has-children a:hover {
-  color: rgb(255, 94, 94);
-}
-/*Subnavigation*/
 .sub-nav {
   display: none;
 }
-/* Portfolio list */
 .has-children li a:hover {
   color: #fff;
 }
 .has-children li a {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .has-children:hover > .sub-nav {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.7;
+  display: block;
   padding-inline: 0;
-  background: rgb(39, 37, 37);
+  /* background: rgb(39, 37, 37); */
 }
 /* End subnavigation*/
 
@@ -83,6 +76,8 @@ label {
   display: none;
 }
 /* End of hamburger menu */
+/* End of Navigation Menu */
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -99,30 +94,34 @@ label {
     margin-bottom: 10px;
     font-size: 3rem;
     cursor: pointer;
+  
   }
   .menu {
     display: none;
     text-align: right;
     width: 100%;
     background: rgba(39, 37,37, 0.8);
-    position: relative;
-    padding-top: 10px;
-
+    padding-top: 80px;
+    min-height: 100vh;
+    position: absolute;
+    top: -20px;
+    
   }
   .menu a {
     display: block;
     font-size: 1.6rem;
     line-height: 1.6;
   }
+  
+  .nav li ul {    /* This fixes an issue with sub-nav */
+    position: relative;
+    z-index: 100; 
+  }
   .sub-nav {
     display: block;
-    width: 100%;
-  }
-  .has-children a {
-    color: rgb(255, 94, 94);
+
   }
   .has-children li a {
-    color: rgb(255, 94, 94);
     font-size: 1.2rem;
   }
   #toggle:checked + .menu {

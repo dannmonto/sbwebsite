@@ -19,7 +19,7 @@ body {
   color: #fff;
   margin: 0;
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: rgba(31, 29, 29, 0.959);
+  background-color: rgb(39, 37, 37);
 }
 h1,
 h2,
@@ -30,12 +30,18 @@ h5 {
 }
 /* Main Styles */
 /* Title content */
+.main-bg-container {
+  height: 500px;
+  background: linear-gradient(rgb(39, 37, 37), transparent 90%),
+              linear-gradient(0deg, rgb(39, 37, 37) , transparent 90%),
+              rgb(39, 37, 37) url("../img/main-background.jpg") no-repeat center;
+              background-size: cover;
+}
 .santiago {
   clear: both;
   height: 250px;
   text-align: center;
 }
-
 .santiago h1 {
   color: #fff;
   font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -59,7 +65,7 @@ h5 {
 }
 /* End of title content */
 
-/* Primary Content */
+/* Primary Content - Main gallery*/
 .primary-content {
   text-align: center;
 }
@@ -71,6 +77,31 @@ h5 {
 }
 /* End of Primary Content */
 
+/* About section */
+
+.about-section {
+  margin: 0 25%;
+  text-align: center;
+}
+
+.about-section h2 {
+  display: inline;
+  padding: 0 30px 2px;
+  border-bottom: 2px solid #fff;
+}
+
+/* Footer contact section */
+.contact-footer {
+
+  margin: 50px 25% 200px;
+  text-align: center;
+}
+.contact-footer h3 {
+  display: inline;
+  padding: 0 15px 2px;
+  border-bottom: 2px solid #fff;
+}
+
 /* Media Queries */
 @media (min-width: 769px) and (max-width: 950px) {
   .main-header h1 {
@@ -79,6 +110,7 @@ h5 {
   }
 }
 @media (max-width: 768px) {
+
   .santiago h1 {
     letter-spacing: 0.5rem;
     text-indent: 0.5rem;
