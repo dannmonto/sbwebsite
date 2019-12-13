@@ -24,6 +24,7 @@
 }
 .menu {
   clear: both;
+  float: right;
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -46,6 +47,7 @@
 .nav li ul {    /* This fixes the indentation of the sub-menu */
   position: absolute;
   z-index: 100; 
+  padding-inline-start: 0;
 }
 .sub-nav {
   display: none;
@@ -58,7 +60,6 @@
 }
 .has-children:hover > .sub-nav {
   display: block;
-  padding-inline: 0;
   /* background: rgb(39, 37, 37); */
 }
 /* End subnavigation*/
