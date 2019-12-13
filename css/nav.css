@@ -76,6 +76,7 @@ label {
   display: none;
 }
 /* End of hamburger menu */
+
 /* End of Navigation Menu */
 
 
@@ -105,12 +106,14 @@ label {
     min-height: 100vh;
     position: absolute;
     top: -20px;
+    pointer-events: none;
     
   }
   .menu a {
     display: block;
     font-size: 1.6rem;
     line-height: 1.6;
+    pointer-events: auto;
   }
   
   .nav li ul {    /* This fixes an issue with sub-nav */
@@ -126,5 +129,6 @@ label {
   }
   #toggle:checked + .menu {
     display: block;
+    
   }
 }

@@ -31,7 +31,7 @@ h5 {
 /* Main Styles */
 /* Title content */
 .main-bg-container {
-  height: 500px;
+  height: 460px;
   background: linear-gradient(rgb(39, 37, 37), transparent 90%),
               linear-gradient(0deg, rgb(39, 37, 37) , transparent 90%),
               rgb(39, 37, 37) url("../img/main-background.jpg") no-repeat center;
@@ -104,13 +104,24 @@ h5 {
 
 /* Media Queries */
 @media (min-width: 769px) and (max-width: 950px) {
-  .main-header h1 {
-    font-size: 4em;
-    display: inline-block;
+  
+  .main-bg-container {
+    height: 420px;
+  }
+  .santiago h1 {
+    font-size: 4.5em;
+    line-height: 1;
   }
 }
+
 @media (max-width: 768px) {
 
+.main-bg-container {
+  height: 320px;
+}
+  .santiago {
+    margin-top: -60px;
+  }
   .santiago h1 {
     letter-spacing: 0.5rem;
     text-indent: 0.5rem;
@@ -120,11 +131,18 @@ h5 {
   }
   .motto {
     font-size: 1rem;
+    padding: 0;
     border-bottom-style: none;
 
   }
   .main-zda-img {
     margin-top: 10px;
     max-width: 90%;
+  }
+}
+
+@media (max-width: 533px) {
+  .main-bg-container {
+    height: 360px;
   }
 }
