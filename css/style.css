@@ -72,7 +72,7 @@ h5 {
 .main-zda-img {
   max-width: 800px;
   border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(255, 255, 255, .8);
+  box-shadow: 2px 2px 2px rgba(87, 87, 87, 0.975);
   margin-bottom: 50px;
 }
 /* End of Primary Content */
