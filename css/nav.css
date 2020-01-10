@@ -19,8 +19,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height:calc(80px - 1px);
-  transition: top 0.3s;
+  height: 80px;
+  
 }
 .nav .current {
   color: #fff;
