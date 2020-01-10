@@ -23,11 +23,11 @@
 //   prevScrollpos = currentScrollPos;
 // } 
 
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 0) {
-      $('.nav').fadeOut();
-    } else {
-      $('.nav').fadeIn();
-    }
-  });
+// $(window).scroll(function() {
+//     if ($(this).scrollTop() > 0) {
+//       $('#nav').fadeOut();
+//     } else {
+//       $('#nav').fadeIn();
+//     }
+//   });
 
