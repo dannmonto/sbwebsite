@@ -183,7 +183,7 @@ h5 {
   }
   .gallery-mobile img {
     width: 70%;
-   scale: .1;
+   
   }
   .primary-content {
     text-align: center;
@@ -203,8 +203,14 @@ h5 {
 }
 
 @media only screen and (min-width: 768px) {
-/* For desktop */
-  
+/* For desktop or large tablets*/
+.main-bg-container {
+  width: 100vw;
+}
+
+.nav {
+  position: ;
+}
 /* Hide mobile version of gallery */
 .gallery-mobile {
   display: none;
@@ -213,7 +219,7 @@ h5 {
 
 .main-wrapper{
   text-align: center;
-  width: 80%;
+  width: 100vw;
 }
 .gallery {
     display: inline;
