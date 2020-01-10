@@ -15,7 +15,7 @@
 }
 /* Navigation menu */
 .nav {
-  background: rgba(39, 37,37, 0.8);
+  background: linear-gradient(180deg, rgb(39, 37, 37),transparent 100%);
   position: fixed;
   top: 0;
   width: 100%;
@@ -69,7 +69,6 @@
 }
 .has-children:hover > .sub-nav {
   display: block;
-  /* background: rgb(39, 37, 37); */
 }
 /* End subnavigation*/
 
@@ -86,7 +85,6 @@ label {
   display: none;
 }
 /* End of hamburger menu */
-
 /* End of Navigation Menu */
 
 

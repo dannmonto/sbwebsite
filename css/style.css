@@ -21,6 +21,7 @@ body {
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: rgb(39, 37, 37);
 }
+
 h1,
 h2,
 h3,
@@ -28,7 +29,8 @@ h4,
 h5 {
   font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* Main Styles */
+
+/* Main page */
 /* Title content */
 .main-bg-container {
   height: 460px;
@@ -37,11 +39,13 @@ h5 {
               rgb(39, 37, 37) url("../img/main-background.jpg") no-repeat center;
               background-size: cover;
 }
+
 .santiago {
   clear: both;
   height: 250px;
   text-align: center;
 }
+
 .santiago h1 {
   color: #fff;
   font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,6 +56,7 @@ h5 {
   margin-top: 100px;
   margin-bottom: 15px;
 }
+
 .motto {
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -69,6 +74,7 @@ h5 {
 .primary-content {
   text-align: center;
 }
+
 .main-zda-img {
   max-width: 800px;
   margin-bottom: 50px;
@@ -79,13 +85,14 @@ h5 {
   -moz-transition: all ease-in-out 500ms;
   -o-transition:all ease-in-out 500ms;
   transition: all ease-in-out 500ms;
+  cursor: pointer;
 }
 /* End of Primary Content */
 
 /* About section */
 
 .about-section {
-  margin: 0 25%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -95,38 +102,109 @@ h5 {
   border-bottom: 2px solid #fff;
 }
 
-/* Footer contact section */
-.contact-footer {
+/*  Contact section */
+.contact-div {
 
-  margin: 50px 25% 200px;
+  margin: 50px auto;
   text-align: center;
 }
-.contact-footer h3 {
+
+.contact-div h3 {
   display: inline;
   padding: 0 15px 2px;
   border-bottom: 2px solid #fff;
 }
 
-/* Media Queries */
-@media (min-width: 769px) and (max-width: 950px) {
+/* Footer section */
+.main-footer {
+
+  padding: 2em 0;
+	background: rgb(39, 39, 39);
+  text-align: center;
+}
+
+.gallery {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.gallery img {
+  transition: .2s;
+  padding: 15px;
+  width: 200px;
+}
+
+.gallery img:hover {
+  filter: grayscale(80%);
+  transform: scale(1.2);
+}
+.main-wrapper {
   
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+  
+@media (min-width: 768px) {
+  .gallery {
+    
+    margin: 0 auto;
+  }
+
+  .gallery img {
+   margin-left: 20px;
+  }
+
   .main-bg-container {
     height: 420px;
+    
   }
+
   .santiago h1 {
     font-size: 4.5em;
     line-height: 1;
   }
+  
+  .primary-content {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .about-section {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+ .main-wrapper {
+  min-height: calc(100vh - 88px);
+ }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
+  .gallery {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .gallery img {
+    margin-left: 20px;
+   }
+  
+  .main-wrapper {
+    min-height: calc(100vh - 88px);
+   }
 .main-bg-container {
   height: 320px;
 }
+
   .santiago {
     margin-top: -60px;
   }
+
   .santiago h1 {
     letter-spacing: 0.5rem;
     text-indent: 0.5rem;
@@ -134,20 +212,36 @@ h5 {
     font-size: 4rem;
     max-width: 100%;
   }
+
   .motto {
     font-size: 1rem;
     padding: 0;
     border-bottom-style: none;
 
   }
+
   .main-zda-img {
     margin-top: 10px;
     max-width: 90%;
   }
+
 }
 
 @media (max-width: 533px) {
+
+  .gallery {
+    
+    width: 100%;
+    margin: 0px auto;
+  }
+
   .main-bg-container {
     height: 360px;
   }
+  .main-wrapper {
+    min-height: calc(100vh - 88px);
+   }
+  
 }
+
+

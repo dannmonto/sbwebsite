@@ -3,29 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>Santiago Betancour - Landscape</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="/js/lightbox-plus-jquery.min.js"></script>
     <meta name="viewport" content="width=device-width">
   </head>
 <body>
+  <div class="main-wrapper">
     <header class="main-header">
-        <a class="site-logo" href="index.html">
-        <img src="img/logo.png" alt="Santiago Betancour - Photographer"></a>
-        <!-- Menu -->
+        <!-- Navigation bar -->
         <nav class="nav">
+           <!-- Logo -->
+            <a class="site-logo" href="index.html">
+                <img src="img/logo.png" alt="Santiago Betancour - Photographer"></a>
           <label for="toggle">&#9776;</label>
           <input type="checkbox" id="toggle">
           <ul class="menu">
             <li class="has-children"><a href="index.html">Home</a>
               <ul class="sub-nav">
-                <li><a class="sub-item" href="#">Contact</a></li>
+                <li><a class="sub-item" href="#contact">Contact</a></li>
               </ul>
-            <li><a class= "current" href="landscape.html">Landscape</a></li>
+            <li><a class="current" href="landscape.html">Landscape</a></li>
             <li><a href="fashion.html">Fashion</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="motion.html">Motion</a></li>
           </ul>
         </nav>
       </header>
+      <div class="gallery">
+        <a href="img/Landscape/Cabo de la Vela Colombia.jpg" data-lightbox="landscapeGallery" data-title=""><img src="img/Landscape/resized/Cabo de la Vela Colombia.jpg"></a>
+        <a href="img/Landscape/Chemins du Mont-Royal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Chemins du Mont-Royal.jpg"></a>
+        <a href="img/Landscape/Costeno Beach Colombia.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Costeno Beach Colombia.jpg"></a>
+        <a href="img/Landscape/Foresta Lumina.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Foresta Lumina.jpg"></a>
+        <a href="img/Landscape/Jardins Chinois de Montréal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Jardins Chinois de Montréal.jpg"></a>
+        <a href="img/Landscape/Lac des Castors.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Lac des Castors.jpg"></a>
+        <a href="img/Landscape/Mont-Pinnacle.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Mont-Pinnacle.jpg"></a>
+        <a href="img/Landscape/Panorama de Montréal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Panorama de Montréal.jpg"></a>
+        <a href="img/Landscape/Paysage au Québec.jpg"><img src="img/Landscape/resized/Paysage au Québec.jpg"></a>
+        <a href="img/Landscape/Quartier des Spectacles.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Quartier des Spectacles.jpg"></a>
+        <a href="img/Landscape/Station Berri-Uqam.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Station Berri-Uqam.jpg"></a>
+        <a href="img/Landscape/Vieux-Port de Montréal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Vieux-Port de Montréal.jpg"></a>
+        <a href="img/Landscape/Village de Noel à Québec.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Village de Noel à Québec.jpg"></a>
+        <a href="img/Landscape/Ville de Montréal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Ville de Montréal.jpg"></a>
+      </div>
+  
+    </div>
+    <footer class="main-footer">
+      <span>&copy; Copyright 2020 Santiago Betancour</span>
+    </footer>
 </body>
 </html>
