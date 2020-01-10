@@ -73,6 +73,7 @@ h5 {
   line-height: 1.8;
   font-weight: 300;
   letter-spacing: .1rem;
+  text-align: center;
   
 }
 /* End of title content */
@@ -156,11 +157,14 @@ h5 {
 
 /* Main wrapping of content */
 .main-wrapper {
-  text-align: center;
+  /* text-align: center; */
   width: 100vw;
   margin: 0 auto;
 }
 
+.gallery-title {
+  text-align: center;
+}
 .gallery-title h2 {
   display: inline-block;
   text-align: center;
@@ -209,6 +213,7 @@ h5 {
 
 .main-wrapper{
   text-align: center;
+  width: 80%;
 }
 .gallery {
     display: inline;
