@@ -102,6 +102,7 @@ h5 {
   
   padding-left: env(safe-area-inset-left); /* Apply safe area */
   padding-right: env(safe-area-inset-right);
+
 }
 
 .about-section h2 {
@@ -151,15 +152,36 @@ h5 {
 }
 .gallery img:hover {
   filter: grayscale(80%);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 /* Mobile Gallery */
 .gallery-mobile {
-  text-align: center;
+  /* text-align: center; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2vmin;
+  grid-auto-flow: dense;
+  margin: 0 5px;
+  
 }
 .gallery-mobile img {
-  max-width: 75vw;
-  padding: 15px 0;
+  /* display: inline-block;
+  vertical-align: top;
+  margin: 0 auto;
+  max-width: 30vw;
+  padding: 15px 0; */
+  object-fit: cover;
+  overflow: hidden;
+
+  height: 100%;
+  width: 100%;
+}
+.gallery-mobile a:first-child {
+  grid-column-start: span 2;
+  grid-row-start:  span 2;
+}
+.gallery-mobile a:nth-child(2n+6){
+  grid-row-start: span 2;
 }
 /* Main wrapping of content */
 .main-wrapper {
@@ -219,14 +241,17 @@ h5 {
 .gallery-mobile {
     display: none;
   }
+  .gallery {
+    display: inline-block;
+  }
 /* Display larger screens version of gallery */
 .main-wrapper{
     text-align: center;
     width: 100vw;
   }
-.gallery {
+/* .gallery {
     display: inline;
-  }
+  } */
 .gallery img {
     padding: 15px;
    }
@@ -242,9 +267,9 @@ h5 {
   .contact-div {
     clear: left;
   }
-}
+} */
 
-  @media only screen and (min-width: 1100px) and (max-width: 1499px) {
+  /* @media only screen and (min-width: 1100px) and (max-width: 1499px) {
     .about-section {
       margin-right: 10%;
       margin-top: 80px;
@@ -265,9 +290,9 @@ h5 {
       clear: both;
       margin-top: 10%;
     }
-  }
+  } */
 
-  @media only screen and (max-width: 704px) {
+  /* @media only screen and (max-width: 704px) {
     .primary-content {
       text-align: center;
     }
@@ -276,12 +301,11 @@ h5 {
       margin: 0;
     }
     .about-section {
-      margin-top: 80px;
+      margin-top: 50px;
     }
-  }
+  } */
 
-  @media only screen and (min-width: 1500px)
-  {
+  /* @media only screen and (min-width: 1500px) {
     .main-zda-img {
       float: left;
       width: 800px;
@@ -304,7 +328,7 @@ h5 {
     clear: both;
     margin-top: 10%;
   }
-  }
+  } */
 /* 
   .gallery img {
    margin-left: 20px;

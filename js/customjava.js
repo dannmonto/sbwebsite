@@ -1,10 +1,4 @@
-
-
-
-
-
-
-
+// Masonery galler
 
 
 // var prevScrollpos = window.pageYOffset;
