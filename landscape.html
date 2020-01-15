@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-    <script src="/js/lightbox-plus-jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="/js/customjava.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script
+			  src="http://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/customjava.js"></script>
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
   </head>
 <body>
@@ -39,41 +39,24 @@
       <div class="gallery-title">
         <h2>Landscape & Cityscape</h2>
       </div>
-      <!-- Larger screen Gallery -->
-      <div class="gallery">
-        <a href="img/Landscape/Cabo de la Vela Colombia.jpg" data-lightbox="landscapeGallery" data-title=""><img src="img/Landscape/resized/Cabo de la Vela Colombia.jpg"></a>
-        <a href="img/Landscape/Chemins du Mont-Royal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Chemins du Mont-Royal.jpg"></a>
-        <a href="img/Landscape/Costeno Beach Colombia.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Costeno Beach Colombia.jpg"></a>
-        <a href="img/Landscape/Foresta Lumina.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Foresta Lumina.jpg"></a>
-        <a href="img/Landscape/Jardins Chinois de Montréal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Jardins Chinois de Montréal.jpg"></a>
-        <a href="img/Landscape/Lac des Castors.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Lac des Castors.jpg"></a>
-        <a href="img/Landscape/Mont-Pinnacle.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Mont-Pinnacle.jpg"></a>
-        <a href="img/Landscape/Panorama de Montréal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Panorama de Montréal.jpg"></a>
-        <a href="img/Landscape/Paysage au Québec.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Paysage au Québec.jpg"></a>
-        <a href="img/Landscape/Quartier des Spectacles.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Quartier des Spectacles.jpg"></a>
-        <a href="img/Landscape/Station Berri-Uqam.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Station Berri-Uqam.jpg"></a>
-        <a href="img/Landscape/Vieux-Port de Montréal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Vieux-Port de Montréal.jpg"></a>
-        <a href="img/Landscape/Village de Noel à Québec.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Village de Noel à Québec.jpg"></a>
-        <a href="img/Landscape/Ville de Montréal.jpg" data-lightbox="landscapeGallery"><img src="img/Landscape/resized/Ville de Montréal.jpg"></a>
+        <!-- Gallery -->
+        <div class="gallery">
+          <a data-fancybox="landscapeGallery" href="img/Landscape/Cabo de la Vela Colombia.jpg" data-caption="Cabo de la Vela, Colombia"  ><img src="img/Landscape/Cabo de la Vela Colombia.jpg"></a>
+          <a href="img/Landscape/Chemins du Mont-Royal.jpg" data-fancybox="landscapeGallery" data-caption="Chemins du Mont-Royal"><img src="img/Landscape/Chemins du Mont-Royal.jpg"></a>
+          <a href="img/Landscape/Foresta Lumina.jpg" data-fancybox="landscapeGallery" data-caption="Foresta Lumina"><img src="img/Landscape/Foresta Lumina.jpg"></a>
+          <a href="img/Landscape/Jardins Chinois de Montréal.jpg" data-fancybox="landscapeGallery" data-caption="Jardins Chinois de Montréal"><img src="img/Landscape/Jardins Chinois de Montréal.jpg"></a>
+          <a href="img/Landscape/Mont-Pinnacle.jpg" data-fancybox="landscapeGallery" data-caption="Mont-Pinnacle"><img src="img/Landscape/Mont-Pinnacle.jpg"></a>
+          <a href="img/Landscape/Panorama de Montréal.jpg" data-fancybox="landscapeGallery" data-caption="Panorama de Montréal"><img src="img/Landscape/Panorama de Montréal.jpg"></a>
+          <a href="img/Landscape/Paysage au Québec.jpg" data-fancybox="landscapeGallery" data-caption="Paysage au Québec"><img src="img/Landscape/Paysage au Québec.jpg"></a>
+          <a href="img/Landscape/Quartier des Spectacles.jpg" data-fancybox="landscapeGallery" data-caption="Quartier des Spectacles"><img src="img/Landscape/Quartier des Spectacles.jpg"></a>
+          <a href="img/Landscape/Station Berri-Uqam.jpg" data-fancybox="landscapeGallery" data-caption="Station Berri-Uqam"><img src="img/Landscape/Station Berri-Uqam.jpg"></a>
+          <a href="img/Landscape/Vieux-Port de Montréal.jpg" data-fancybox="landscapeGallery" data-caption="Vieux-Port de Montréal"><img src="img/Landscape/Vieux-Port de Montréal.jpg"></a>
+          <a href="img/Landscape/Village de Noel à Québec.jpg" data-fancybox="landscapeGallery" data-caption="Village de Noël à Québec"><img src="img/Landscape/Village de Noel à Québec.jpg"></a>
+          <a href="img/Landscape/Ville de Montréal.jpg" data-fancybox="landscapeGallery" data-caption="Ville de Montréal"><img src="img/Landscape/Ville de Montréal.jpg"></a>
+          <a href="img/Landscape/Costeno Beach Colombia.jpg" data-fancybox="landscapeGallery" data-caption="Costeño Bach, Colombia"><img src="img/Landscape/Costeno Beach Colombia.jpg"></a>
+          <a href="img/Landscape/Lac des Castors.jpg" data-fancybox="landscapeGallery" data-caption="Lac des Castors"><img src="img/Landscape/Lac des Castors.jpg"></a>
+        </div>
       </div>
-      <!-- Mobile Gallery -->
-      <div class="gallery-mobile">
-        <a data-fancybox="landscapeGallery-mobile" href="img/Landscape/Cabo de la Vela Colombia.jpg" data-caption="Cabo de la Vela, Colombia"><img src="img/Landscape/resized/Cabo de la Vela Colombia.jpg"></a>
-        <a href="img/Landscape/Chemins du Mont-Royal.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Chemins du Mont-Royal"><img src="img/Landscape/Chemins du Mont-Royal.jpg"></a>
-        <a href="img/Landscape/Foresta Lumina.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Foresta Lumina"><img src="img/Landscape/Foresta Lumina.jpg"></a>
-        <a href="img/Landscape/Jardins Chinois de Montréal.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Jardins Chinois de Montréal"><img src="img/Landscape/Jardins Chinois de Montréal.jpg"></a>
-        <a href="img/Landscape/Mont-Pinnacle.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Mont-Pinnacle"><img src="img/Landscape/Mont-Pinnacle.jpg"></a>
-        <a href="img/Landscape/Panorama de Montréal.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Panorama de Montréal"><img src="img/Landscape/Panorama de Montréal.jpg"></a>
-        <a href="img/Landscape/Paysage au Québec.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Paysage au Québec"><img src="img/Landscape/Paysage au Québec.jpg"></a>
-        <a href="img/Landscape/Quartier des Spectacles.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Quartier des Spectacles"><img src="img/Landscape/Quartier des Spectacles.jpg"></a>
-        <a href="img/Landscape/Station Berri-Uqam.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Station Berri-Uqam"><img src="img/Landscape/Station Berri-Uqam.jpg"></a>
-        <a href="img/Landscape/Vieux-Port de Montréal.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Vieux-Port de Montréal"><img src="img/Landscape/Vieux-Port de Montréal.jpg"></a>
-        <a href="img/Landscape/Village de Noel à Québec.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Village de Noël à Québec"><img src="img/Landscape/Village de Noel à Québec.jpg"></a>
-        <a href="img/Landscape/Ville de Montréal.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Ville de Montréal"><img src="img/Landscape/Ville de Montréal.jpg"></a>
-        <a href="img/Landscape/Costeno Beach Colombia.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Costeño Bach, Colombia"><img src="img/Landscape/Costeno Beach Colombia.jpg"></a>
-        <a href="img/Landscape/Lac des Castors.jpg" data-fancybox="landscapeGallery-mobile" data-caption="Lac des Castors"><img src="img/Landscape/Lac des Castors.jpg"></a>
-      </div>
-    </div>
     <footer class="main-footer">
       <span>&copy; Copyright 2020 Santiago Betancour</span>
     </footer>

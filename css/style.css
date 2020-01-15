@@ -98,24 +98,22 @@ h5 {
 /* About section */
 .about-section {
   margin: 0 auto;
+  margin-top: 20px;
   text-align: center;
   
   padding-left: env(safe-area-inset-left); /* Apply safe area */
   padding-right: env(safe-area-inset-right);
-
 }
-
 .about-section h2 {
   display: inline-block;
   padding: 0 20px;
   margin-top: 0;
   border-bottom: 2px solid #000;
 }
-
 .about-section p {
-  margin-top: 5px;
-}
+  margin: 5px 5px 0;
 
+}
 /*  Contact section */
 .contact-div {
   padding: 16px;
@@ -130,7 +128,7 @@ h5 {
   border-bottom: 2px solid #000;
 }
 .contact-div p {
-  margin-top: 5px;
+  margin: 5px 5px 0;
 }
 /* Footer section */
 .main-footer {
@@ -139,48 +137,27 @@ h5 {
 	background: rgb(39, 37, 37);
   text-align: center;
 }
-
 /* Gallery section */
-/* Large Screen gallery */
 .gallery {
-  display: none;
-  margin: 20px auto;
-}
-.gallery img {
-  transition: .2s;
-  padding: 15px 0;
-}
-.gallery img:hover {
-  filter: grayscale(80%);
-  transform: scale(1.1);
-}
-/* Mobile Gallery */
-.gallery-mobile {
   /* text-align: center; */
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 2vmin;
+  grid-gap: 1vmin;
   grid-auto-flow: dense;
-  margin: 0 5px;
-  
+  margin: 0 5px 5px;
 }
-.gallery-mobile img {
-  /* display: inline-block;
-  vertical-align: top;
-  margin: 0 auto;
-  max-width: 30vw;
-  padding: 15px 0; */
+.gallery img {
   object-fit: cover;
+  object-position: 50% 50%;
   overflow: hidden;
-
   height: 100%;
   width: 100%;
 }
-.gallery-mobile a:first-child {
+.gallery a:first-child {
   grid-column-start: span 2;
   grid-row-start:  span 2;
 }
-.gallery-mobile a:nth-child(2n+6){
+.gallery a:nth-child(2n+6){
   grid-row-start: span 2;
 }
 /* Main wrapping of content */
@@ -206,12 +183,9 @@ h5 {
   Media Queries
 ==================================== */
 @media only screen and (orientation: landscape){
-  .gallery-mobile {
+  .gallery {
     text-align: center;
     margin: 0 auto;
-  }
-  .gallery-mobile img {
-    width: 70%;
   }
   .primary-content {
     text-align: center;
@@ -220,46 +194,20 @@ h5 {
     max-width: 90%;
   }
 }
-
-@media only screen and (min-width: 600px){
-  /* For tablets */
-/* .main-zda-img {
-  max-width: 90vw;
-  
-} */
-}
-
 @media only screen and (min-width: 768px) {
-/* For desktop or large tablets*/
+/* For larger screns */
+.nav {
+  position: ;
+}
 .main-bg-container {
     width: 100vw;
   }
-.nav {
-    position: ;
-  }
-/* Hide mobile version of gallery */
-.gallery-mobile {
-    display: none;
-  }
-  .gallery {
-    display: inline-block;
-  }
-/* Display larger screens version of gallery */
-.main-wrapper{
-    text-align: center;
-    width: 100vw;
-  }
-/* .gallery {
-    display: inline;
-  } */
-.gallery img {
-    padding: 15px;
-   }
   .main-zda-img {
     margin: 5px 20px 10px;
     width: 500px;
     float: left;
   }
+
   .about-section {
     margin: 5px 5px;
     margin-top: 80px;
@@ -267,157 +215,58 @@ h5 {
   .contact-div {
     clear: left;
   }
-} */
+/* Gallery */
+.main-wrapper{
+    text-align: center;
+    width: 100vw;
+  }
+  .gallery {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1499px) {
+  .about-section {
+    margin-right: 10%;
+    margin-top: 80px;
+  }
+  .contact-div {
+    clear: both;
+    
+  }
+  .main-zda-img {
+    width: 600px;
+    margin-right: 10%;
+    margin-left: 10%;
+    
 
-  /* @media only screen and (min-width: 1100px) and (max-width: 1499px) {
-    .about-section {
-      margin-right: 10%;
-      margin-top: 80px;
-    }
-    .contact-div {
-      clear: both;
-      
-    }
-    .main-zda-img {
-      width: 600px;
-      margin-right: 10%;
-      margin-left: 10%;
-      
- 
-    }
-
-    .main-footer {
-      clear: both;
-      margin-top: 10%;
-    }
-  } */
-
-  /* @media only screen and (max-width: 704px) {
-    .primary-content {
-      text-align: center;
-    }
-    .main-zda-img {
-      float: none;
-      margin: 0;
-    }
-    .about-section {
-      margin-top: 50px;
-    }
-  } */
-
-  /* @media only screen and (min-width: 1500px) {
-    .main-zda-img {
-      float: left;
-      width: 800px;
-      margin-right: 5%;
-    }
-    .about-section {
-      clear: right;
-      margin-right: 5%;
-      margin-top: 80px;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .contact-div {
-      display: inline-block;
-      margin-right: 5%;
-      margin-top: 50px;
-    }
+  }
 
   .main-footer {
     clear: both;
     margin-top: 10%;
   }
-  } */
-/* 
-  .gallery img {
-   margin-left: 20px;
-  }
-
-  .main-bg-container {
-    height: 420px;
-    
-  }
-
-  .santiago h1 {
-    font-size: 4.5em;
-    line-height: 1;
-  }
-  
-  .primary-content {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
+}
+@media only screen and (min-width: 1500px) {
+  .main-zda-img {
+    float: left;
+    width: 800px;
+    margin-right: 5%;
   }
   .about-section {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
+    clear: right;
+    margin-right: 5%;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
- .main-wrapper {
-  min-height: calc(100vh - 88px);
- }
-} */
-
-/* @media (max-width: 767px) {
-
-  .gallery {
-    width: 100%;
-    margin: 0 auto;
+  .contact-div {
+    display: inline-block;
+    margin-right: 5%;
+    margin-top: 50px;
   }
 
-  .gallery img {
-    margin-left: 20px;
-   }
-  
-  .main-wrapper {
-    min-height: calc(100vh - 88px);
-   }
-.main-bg-container {
-  height: 320px;
+.main-footer {
+  clear: both;
+  margin-top: 10%;
+  }
 }
-
-  .santiago {
-    margin-top: -60px;
-  }
-
-  .santiago h1 {
-    letter-spacing: 0.5rem;
-    text-indent: 0.5rem;
-    line-height: 1;
-    font-size: 4rem;
-    max-width: 100%;
-  }
-
-  .motto {
-    font-size: 1rem;
-    padding: 0;
-    border-bottom-style: none;
-
-  }
-
-  .main-zda-img {
-    margin-top: 10px;
-    max-width: 90%;
-  }
-
-} */
-
-/* @media (max-width: 533px) {
-
-  .gallery {
-    
-    width: 100%;
-    margin: 0px auto;
-  }
-
-  .main-bg-container {
-    height: 360px;
-  }
-  .main-wrapper {
-    min-height: calc(100vh - 88px);
-   }
-  
-} */
-
-

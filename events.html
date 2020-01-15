@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <script src="/js/lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script
+			  src="http://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/customjava.js"></script>
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
   </head>
 <body>
@@ -35,41 +39,23 @@
       <div class="gallery-title">
         <h2>Events</h2>
       </div>
-      <!-- Larger screen Gallery -->
+      <!-- Gallery -->
       <div class="gallery">
-        <a href="img/Events/Chasse-Balcon-2.jpg" data-lightbox="eventsGallery" data-title=""><img src="img/Events/resized/Chasse-Balcon-2.jpg"></a>
-        <a href="img/Events/Chasse-Balcon.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Chasse-Balcon.jpg"></a>
-        <a href="img/Events/Événement au Quartier des Spectacles.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Événement au Quartier des Spectacles.jpg"></a>
-        <a href="img/Events/Festival Juste pour Rire.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Festival Juste pour Rire.jpg"></a>
-        <a href="img/Events/Festival MURAL.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Festival MURAL.jpg"></a>
-        <a href="img/Events/Festival de Noel à Toronto.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Festival de Noel à Toronto.jpg"></a>
-        <a href="img/Events/Jeux du Québec 2016.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Jeux du Québec 2016.jpg"></a>
-        <a href="img/Events/Marché de Noël au Distillery District.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Marché de Noël au Distillery District.jpg"></a>
-        <a href="img/Events/Mariage.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Mariage.jpg"></a>
-        <a href="img/Events/Ouverture des Lanterner chinoises au Jardin Botanique.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Ouverture des Lanterner chinoises au Jardin Botanique.jpg"></a>
-        <a href="img/Events/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-1.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-1.jpg"></a>
-        <a href="img/Events/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-2.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-2.jpg"></a>
-        <a href="img/Events/Spectacles de rue au Sud-Ouest-1.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Spectacles de rue au Sud-Ouest-1.jpg"></a>
-        <a href="img/Events/Spectacles de rue au Sud-Ouest-2.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Spectacles de rue au Sud-Ouest-2.jpg"></a>
-        <a href="img/Events/Tamstams du Mont-Royal.jpg" data-lightbox="eventsGallery"><img src="img/Events/resized/Tamstams du Mont-Royal.jpg"></a>
-      </div>
-      <!-- Mobile Gallery -->
-      <div class="gallery-mobile">
-        <img src="img/Events/Chasse-Balcon-2.jpg">
-        <img src="img/Events/Chasse-Balcon.jpg">
-        <img src="img/Events/Événement au Quartier des Spectacles.jpg">
-        <img src="img/Events/Festival Juste pour Rire.jpg">
-        <img src="img/Events/Festival MURAL.jpg">
-        <img src="img/Events/Festival de Noel à Toronto.jpg">
-        <img src="img/Events/Jeux du Québec 2016.jpg">
-        <img src="img/Events/Marché de Noël au Distillery District.jpg">
-        <img src="img/Events/Mariage.jpg">
-        <img src="img/Events/Ouverture des Lanterner chinoises au Jardin Botanique.jpg">
-        <img src="img/Events/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-1.jpg">
-        <img src="img/Events/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-2.jpg">
-        <img src="img/Events/Spectacles de rue au Sud-Ouest-1.jpg">
-        <img src="img/Events/Spectacles de rue au Sud-Ouest-2.jpg">
-        <img src="img/Events/Tamstams du Mont-Royal.jpg">
+        <a href="img/Events/Chasse-Balcon-2.jpg" data-fancybox= "eventsGallery" data-caption="Chasse-Balcon"><img src="img/Events/Chasse-Balcon-2.jpg"></a>
+        <a href="img/Events/Chasse-Balcon.jpg" data-fancybox="eventsGallery" data-caption="Chasse-Balcon"><img src="img/Events/Chasse-Balcon.jpg"></a>
+        <a href="img/Events/Événement au Quartier des Spectacles.jpg" data-fancybox="eventsGallery" data-caption="Événement au Quartier des Spectacles"><img src="img/Events/Événement au Quartier des Spectacles.jpg"></a>
+        <a href="img/Events/Festival Juste pour Rire.jpg" data-fancybox="eventsGallery" data-caption="Festival Juste pour Rire"><img src="img/Events/Festival Juste pour Rire.jpg"></a>
+        <a href="img/Events/Festival MURAL.jpg" data-fancybox="eventsGallery" data-caption="Festival MURAL"><img src="img/Events/Festival MURAL.jpg"></a>
+        <a href="img/Events/Festival de Noel à Toronto.jpg" data-fancybox="eventsGallery" data-caption="Festival de Noël à Toronto"><img src="img/Events/Festival de Noel à Toronto.jpg"></a>
+        <a href="img/Events/Jeux du Québec 2016.jpg" data-fancybox="eventsGallery" data-caption="Jeux du Québec 2016"><img src="img/Events/Jeux du Québec 2016.jpg"></a>
+        <a href="img/Events/Marché de Noël au Distillery District.jpg" data-fancybox="eventsGallery" data-caption="Marché de Noël au Distillery District"><img src="img/Events/Marché de Noël au Distillery District.jpg"></a>
+        <a href="img/Events/Mariage.jpg" data-fancybox="eventsGallery" data-caption="Mariage"><img src="img/Events/Mariage.jpg"><//a>
+        <a href="img/Events/Ouverture des Lanterner chinoises au Jardin Botanique.jpg" data-fancybox="eventsGallery" data-caption="Ouverture des Lanterner chinoises au Jardin Botanique"><img src="img/Events/Ouverture des Lanterner chinoises au Jardin Botanique.jpg"></a>
+        <a href="img/Events/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-1.jpg" data-fancybox="eventsGallery" data-caption="Piknic Électronik aux Jardins Gamelin"><img src="img/Events/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-1.jpg"></a>
+        <a href="img/Events/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-2.jpg" data-fancybox="eventsGallery" data-caption="Piknic Électronik aux Jardins Gamelin"><img src="img/Events/PIKNIC ÉLECTRONIK AUX JARDINS GAMELIN-2.jpg"></a>
+        <a href="img/Events/Spectacles de rue au Sud-Ouest-1.jpg" data-fancybox="eventsGallery" data-caption="Spéctacles de rue au Sud-Ouest"><img src="img/Events/Spectacles de rue au Sud-Ouest-1.jpg"></a>
+        <a href="img/Events/Spectacles de rue au Sud-Ouest-2.jpg" data-fancybox="eventsGallery" data-caption="Spéctacles de rue au Sud-Ouest"><img src="img/Events/Spectacles de rue au Sud-Ouest-2.jpg"></a>
+        <a href="img/Events/Tamstams du Mont-Royal.jpg" data-fancybox="eventsGallery" data-caption="Tamstams du Mont-Royal"><img src="img/Events/Tamstams du Mont-Royal.jpg"></a>
       </div>
     </div>
       <footer class="main-footer">

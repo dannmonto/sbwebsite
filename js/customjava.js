@@ -1,36 +1,15 @@
-// Masonery galler
-
-
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("nav").style.top = "0";
-//   } else {
-//     document.getElementById("nav").style.top = "-80px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// } 
-
-
-
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("nav").style.top = "0";
-//   } else {
-//     document.getElementById("nav").style.top = "-80px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// } 
-
-// $(window).scroll(function() {
-//     if ($(this).scrollTop() > 0) {
-//       $('#nav').fadeOut();
-//     } else {
-//       $('#nav').fadeIn();
-//     }
-//   });
-
+// Custom options for FancyBox 
+$.fancybox.defaults.infobar = true; // Displays image count top left
+$.fancybox.defaults.toolbar = true; // Displays toolbar (thumbnails, play slideshow..)
+// Choose which buttons for toolbar
+$.fancybox.defaults.buttons =  [
+    //"zoom",
+    //"share",
+    //"slideShow",
+    "fullScreen",
+    //"download",
+    //"thumbs",
+    "close"
+  ];
+// Simple protect images (right click)
+  $.fancybox.defaults.protect = true;
