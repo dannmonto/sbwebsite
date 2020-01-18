@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <script src="/js/customjava.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/customjava.js"></script>
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
     
   </head>
@@ -41,10 +43,27 @@
         </div>
   <!-- End of title -->
 
-  <!-- Start of primary content -->
-  <!-- Main photo -->
-      <div class="primary-content">
-          <img class="main-zda-img" src="img/zda/zda4.jpg" alt="Model wearing the Goddess Dress by CarmenCalburean">
+  <!-- Main gallery slider container (Swiper plugin) -->
+      <div class="swiper-container">
+        <!-- Slider wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/Fashion/Zonas del Alma-8.jpg" alt="Model wearing the Goddess Dress by CarmenCalburean">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Landscape/Cabo de la Vela Colombia.jpg" alt="Cabo de la Vela in Colombia">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Events/Mariage.jpg" alt="Bride and groom dancing on a smokey dancefloor">
+            </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
       </div>
 
   <!-- About section-->
@@ -62,5 +81,6 @@
     <footer class="main-footer">
       <span>&copy; Copyright 2020 Santiago Betancour</span>
     </footer>
+    <script src="js/customSwiper.js"></script>
   </body>
 </html>
