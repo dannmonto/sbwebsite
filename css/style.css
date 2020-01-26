@@ -149,9 +149,10 @@ h1, h2, h3, h4, h5 {
 /* Footer section */
 .main-footer {
   position: fixed;
+  font-size: .8em;
   width: 100vw;
   bottom: 0;
-  height: 50px;
+  height: 40px;
   color: rgb(249, 246, 246);
 	background: rgb(39, 37, 37);
   text-align: center;
@@ -226,11 +227,13 @@ h1, h2, h3, h4, h5 {
 @media only screen and (min-width: 1500px) {
   .main-slider {
     float: left;
-    width: 800px;
+    width: 700px;
     height: auto;
     margin-right: 5%;
     margin-left: 5%;
+    padding-bottom: 40px;
   }
+
   .about-section {
     clear: right;
     margin-right: 5%;
@@ -243,5 +246,6 @@ h1, h2, h3, h4, h5 {
     margin-right: 5%;
     margin-top: 50px;
   }
+
 
 }
