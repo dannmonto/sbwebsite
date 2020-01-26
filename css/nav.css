@@ -1,145 +1,79 @@
 /* Navigation menu and logo */
 
-/* Main header - contains logo and navigation */
-.main-header {
-  height: 100px;
+/* menu header - contains logo and navigation, background image, title and motto */
+.menu-header {
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  text-align: center;
+  background: rgba(39, 37, 37, 0.7);
+  width: 100%;
+  height: 140px;
+}
+.menu-header .current {
+  color: #fff;
+}
+.menu-header a:hover {
+  color: #fff;
+}
+.menu-header a:visited {
+  color: none; 
 }
 /* Logo */
+.site-logo {
+  display: block;
+}
 .site-logo img {
-  position: absolute;
-  float: left;
-  display: flex;
-  max-width: 60px;
-  margin: 10px 0 0 15px;
+  width: 60px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   filter: invert(100%);
 }
-/* Navigation menu */
-.nav {
-  background: rgba(39, 37, 37, 0.7);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-
-}
-.nav .current {
-  color: #fff;
-}
-.nav a:hover {
-  color: #fff;
-}
-.nav a:visited {
-  color: none;
-}
 .menu {
-  clear: both;
-  float: right;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  margin: 15px 30px 0 0;
+  display: inline-block;
+  width: 100%;
 }
 .menu a {
-  display: flex;
   font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(180, 180, 180);
   text-decoration: none;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   font-weight: 100;
   font-size: 1.2rem;
-  padding: 0 15px;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 .menu li {
+  display: inline-block;
+  margin: 0 5px;
   list-style-type: none;
 }
-/* Home link and sub-nav*/
-.nav li ul {    /* This fixes the indentation of the sub-menu */
-  position: absolute;
-  z-index: 100; 
-  padding-inline-start: 0;
-  
-}
-.sub-nav {
-  display: none;
-}
-.has-children li a:hover {
-  color: #fff;
-}
-.has-children li a {
-  font-size: 1rem;
-}
-.has-children:hover > .sub-nav {
-  display: block;
-}
-/* End subnavigation*/
-
-/* Hamburger menu */
-label {
-  color: rgb(249, 246, 246);
-  float: right;
-  margin: 0 40px 0 0;
-  font-size: 2.5rem;
-  line-height: 1;
-  display: none;
-  width: 26px;
-}
-#toggle {
-  display: none;
-}
-/* End of hamburger menu */
 /* End of Navigation Menu */
 
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .main-header {
-    margin-bottom: -20px;
+/* ================================= 
+  Media Queries
+==================================== */
+@media only screen and (min-width: 768px) {
+  .menu-header {
+    height: 180px;
   }
   .site-logo img {
-    max-width: 55px;
-  }
-  label {
-    display: block;
-    margin-top: 10px;
-    font-size: 3rem;
-    cursor: pointer;
-  }
-  
-  .menu {
-    display: none;
-    text-align: right;
-    width: 100%;
-    background: rgba(39, 37,37, 0.8);
-    padding-top: 80px;
-    min-height: 100vh;
-    position: absolute;
-    top: -20px;
-    pointer-events: none;
-    
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .menu a {
-    display: block;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    pointer-events: auto;
-    
-  }
-  .nav {
-    height: 75px;
-  }
-  .nav li ul {    /* This fixes an issue with sub-nav */
-    position: relative;
-    z-index: 100; 
-  }
-  .sub-nav {
-    display: block;
-
-  }
-  .has-children li a {
     font-size: 1.2rem;
+    padding: 0 25px;
   }
-  #toggle:checked + .menu {
-    display: block;
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  
+}
+@media only screen and (min-width: 470px) and (max-width: 767px) {
+  .menu li {
+    margin-top: 20px;
+  }
 }

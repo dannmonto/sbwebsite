@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="js/customjava.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
-    
   </head>
   <body>
-    <div class="main-wrapper">
-      <!-- Main header -->
-        <div class="main-bg-container">
-          <header class="main-header">
-            <!-- Navigation bar -->
-            <nav id ="nav" class="nav">
-              <!-- Logo -->
-                <a class="site-logo" href="index.html">
-                    <img src="img/logo.png" alt="Santiago Betancour - Photographer"></a>
-              <label for="toggle">&#9776;</label>
-              <input type="checkbox" id="toggle">
-              <ul class="menu">
-                <li class="has-children"><a class="current" href="index.html">Home</a>
-                  <ul class="sub-nav">
-                    <li><a class="sub-item" href="#contact">Contact</a></li>
-                  </ul>
-                <li><a href="landscape.html">Landscape</a></li>
-                <li><a href="fashion.html">Fashion</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="motion.html">Motion</a></li>
-              </ul>
-            </nav>
-          </header>
-          <!-- Title -->
-          <div class="santiago">
-            <h1>Santiago Betancour</h1>
-            <span class="motto">Guided by Intuition, Energy, Light and Beauty</span>
-          </div>
-        </div>
-  <!-- End of title -->
 
-  <!-- Main gallery slider container (Swiper plugin) -->
-      <div class="swiper-container">
-        <!-- Slider wrapper -->
-        <div class="swiper-wrapper">
+    <!-- Main wrapper -->
+    <div class="main-wrapper">
+
+      <!-- Main header -->
+      <header class="menu-header clearfix">
+        <!-- Logo -->
+        <a class="site-logo" href="index.html">
+            <img src="img/logo.png" alt="Santiago Betancour - Photographer">
+        </a>
+        <!-- End of logo -->
+
+        <!-- Menu -->
+        <ul class="menu">
+          <li><a class="current" href="index.html">Home</a>
+          <li><a href="landscape.html">Landscape</a></li>
+          <li><a href="fashion.html">Fashion</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="motion.html">Motion</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- End of menu -->
+      </header>
+      <!-- End of main-header -->
+
+      <!-- Title -->
+      <div class="santiago">
+        <h1>Santiago Betancour</h1>
+        <span class="motto">Guided by Intuition, Energy, Light and Beauty</span>
+      </div>
+      <!-- End of title -->
+
+      <!-- Main gallery slider container (Slick plugin) -->
+      <div class="main-slider">
             <!-- Slides -->
-            <div class="swiper-slide">
+            <div>
               <img src="img/Fashion/Zonas del Alma-8.jpg" alt="Model wearing the Goddess Dress by CarmenCalburean">
             </div>
-            <div class="swiper-slide">
+            <div>
               <img src="img/Landscape/Cabo de la Vela Colombia.jpg" alt="Cabo de la Vela in Colombia">
             </div>
-            <div class="swiper-slide">
+            <div>
               <img src="img/Events/Mariage.jpg" alt="Bride and groom dancing on a smokey dancefloor">
             </div>
-        </div>
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        
-      </div>
+      </div> 
+      <!-- End of gallery slider-->
 
-  <!-- About section-->
+      <!-- About section-->
       <div class=about-section>
         <h2>About</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum deleniti cupiditate sapiente perspiciatis explicabo laboriosam unde alias iusto, nesciunt minima eligendi, doloribus laudantium deserunt dolor consequuntur, dolore nam neque sint!</p>
-      </div>
+      </div> 
+      <!-- End of about section -->
 
       <!-- Contact section -->
       <div id="contact" class="contact-div">
         <h3>Contact</h3>
         <p>There is going to be a contact form somewhere around here</p>
       </div>
+      <!-- End of contact section -->
+
     </div>
+    <!-- End of main-wrapper-->
+
+    <!-- Footer -->
     <footer class="main-footer">
       <span>&copy; Copyright 2020 Santiago Betancour</span>
     </footer>
-    <script src="js/customSwiper.js"></script>
+    <!-- End of footer -->
+
+    <!-- Scripts for slick slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--jQuery-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/customSlick.js"></script>
+    <!-- End of scripts for slick -->
   </body>
 </html>

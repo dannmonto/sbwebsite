@@ -1,3 +1,4 @@
+
 // Custom options for FancyBox 
 $.fancybox.defaults.infobar = true; // Displays image count top left
 $.fancybox.defaults.toolbar = true; // Displays toolbar (thumbnails, play slideshow..)
