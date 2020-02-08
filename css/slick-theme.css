@@ -79,7 +79,7 @@
 .slick-prev
 {
     z-index: 1;
-    left: 1%;
+    
 }
 [dir='rtl'] .slick-prev
 {
@@ -89,6 +89,7 @@
 .slick-prev:before
 {
     content: '←';
+
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,6 +107,7 @@
 }
 .slick-next:before
 {
+
     content: '→';
 }
 [dir='rtl'] .slick-next:before
@@ -203,6 +205,13 @@
     color: black;
 }
 
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+    .slick-next::before, .slick-prev::before {
+        padding: 0;
+        margin: 10px;
+    }
+}
 @media only screen and (max-width: 768px) {
     .slick-prev:before,
     .slick-next:before {

@@ -1,8 +1,15 @@
 
-// Custom options for FancyBox 
+// ========== Custom options for FancyBox ========= 
 
-$.fancybox.defaults.infobar = true; // Displays image count top left
-$.fancybox.defaults.toolbar = true; // Displays toolbar (thumbnails, play slideshow..)
+// Displays image count top left
+$.fancybox.defaults.infobar = true; 
+
+// Displays toolbar (thumbnails, play slideshow..)
+$.fancybox.defaults.toolbar = true; 
+
+// Remove focus (selection around images) after clicking
+  $.fancybox.defaults.backFocus =false;
+
 // Choose which buttons for toolbar
 $.fancybox.defaults.buttons =  [
     //"zoom",
@@ -25,3 +32,4 @@ $.fancybox.defaults.buttons =  [
     clickOutside: 'close',
     clickContent: false
   }
+
