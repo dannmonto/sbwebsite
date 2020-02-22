@@ -33,3 +33,4 @@ $.fancybox.defaults.buttons =  [
     clickContent: false
   }
 
+// ========== Custom ========= 

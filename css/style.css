@@ -6,6 +6,7 @@
        url('../fonts/abolition-regular-webfont.woff') format('woff'),
        url('../fonts/abolition-regular-webfont.ttf') format('truetype');
 }
+
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -13,72 +14,119 @@
   box-sizing: border-box;
 }
 body {
-  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   cursor: default;
   color: rgb(0, 0, 0);
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: rgb(249, 246, 246);
 }
-
 h1, h2, h3, h4, h5 {
   font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 a {
   text-decoration: none;
 }
-
 img {
   max-width: 100%;
 }
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
+/* Main content container */
+.container {
+  flex: 1;
+}
 
 /* Navigation */
+.merged-nav {
+  display: none;
+}
+.main-header,
+.main-nav1,
+.main-nav2,
+.main-nav-logo {
+  display: flex;
+}
+.main-nav1,
+.main-nav2,
+.main-nav-logo {
+  flex-direction: column;
+}
 .main-header {
-  position: fixed;
+  position: sticky;
   width: 100%;
+  height: 120px;
   top: 0;
-  background-color: rgba(39, 37, 37, 0.95);
+  background-color: rgba(252, 250, 250, 0.95);
   z-index: 1000;
 }
-
-.logo {
-  display: block;
-  text-align: center;
-  padding: 10px 15px 5px;
+.main-nav-logo {
+  flex: 1;
+  margin: 10px auto 0;
 }
-.logo img {
-  max-width: 50px;
-  filter: invert(100%);
-}
-
-.main-nav {
- 
+.main-nav-logo a {
   text-align: center;
 }
-.main-nav a {
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  padding: 0 15px;
-  color: rgb(180, 180, 180);
+.main-nav-logo img {
+  max-width: 100px;
+  /* filter: invert(100%); */
 }
-.main-nav li {
+.main-nav1,
+.main-nav2 {
+  flex: 2;
+  text-align: center;
+  margin: 1.3em auto;
+}
+.main-nav1 {
+  order: -1;
+}
+.main-nav1 a,
+.main-nav2 a {
   display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  color: rgb(143, 141, 141);
+  padding: 6px 0;
 }
-.main-nav .current  {
-  color: #fff;
+.main-nav1 li,
+.main-nav2 li {
+  margin-left: 25px;
+  margin-right: 25px;
 }
-.main-nav a:hover {
-  color: rgba(255, 255, 255, 0.379);
+.main-nav1 .current,
+.main-nav2 .current {
+  color: rgb(69, 68, 68);
+  border-bottom: 1.4px solid #000;
+}
+.main-nav1 a:hover,
+.main-nav2 a:hover {
+  color: rgba(31, 30, 30, 0.872);
 }
 
+/* Footer section */
+.main-footer {
+  position: sticky;
+  font-size: .8em;
+  width: 100vw;
+  bottom: 0;
+  height: 40px;
+  color: rgb(249, 246, 246);
+	background: rgb(39, 37, 37);
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* ================================= 
+  Content Styles
+==================================== */
 /* Title content */
 .santiago {
-  margin-top: 160px;
   text-align: center;
 }
 /* This is the title */
@@ -106,18 +154,19 @@ img {
   letter-spacing: .1rem;
   text-align: center; 
 }
-/* End of title content */
 
 /* Home page gallery slider */
 .main-slider {
   padding-top: 40px;
+  display: flex;
+  width: 100%;  
 }
 .main-slider img {
   width: 100%;
 }
 /* About section */
 .about-section {
-  margin: auto;
+  margin: auto 3%;
   margin-top: 45px;
   text-align: center;
   padding-left: env(safe-area-inset-left); /* Apply safe area */
@@ -130,7 +179,7 @@ img {
   border-bottom: 2px solid #000;
 }
 .about-section p {
-  margin: 5px 5px 0;
+  margin-top: 5px;
 }
 /*  Contact section */
 .contact-div {
@@ -150,6 +199,16 @@ img {
 }
 
 /* Gallery section */
+.gallery-title {
+  text-align: center;
+}
+.gallery-title h2 {
+  display: inline-block;
+  text-align: center;
+  margin: 40px auto 50px;
+  padding: 0 30px 2px;
+  border-bottom: 2px solid #000;
+}
 .gallery {
   /* text-align: center; */
   display: grid;
@@ -166,119 +225,153 @@ img {
   width: 100%;
   cursor: url('../img/camera-focus.png'), auto;
 }
-
 /* Arrange the images poisition (space taken, etc) */
 .gallery a:first-child {
   grid-column-start: span 2;
   grid-row-start:  span 2;
 }
+
 .gallery a:nth-child(2n+6){
   grid-row-start: span 2;
-}
-.gallery-title {
-  margin-top: 80px;
-  text-align: center;
-}
-.gallery-title h2 {
-  display: inline-block;
-  text-align: center;
-  margin: 80px auto 50px;
-  padding: 0 30px 2px;
-  border-bottom: 2px solid #000;
-}
-/* Footer section */
-.main-footer {
-  position: fixed;
-  font-size: .8em;
-  width: 100vw;
-  bottom: 0;
-  height: 40px;
-  color: rgb(249, 246, 246);
-	background: rgb(39, 37, 37);
-  text-align: center;
-  padding: 1em 0;
-
 }
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-/* @media only screen and (orientation: landscape) and (max-device-width: 1000px) {
-  .santiago {
-    margin-top: 0px;
-  }
-  .main-slider {
-    float: left;
-    width: 75%;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .gallery-title h2 {
-    margin-top: 0;
-  }
-}
-@media only screen and (orientation: landscape) {
-  .gallery {
-    text-align: center;
+@media (min-width: 769px) {
+  .container {
+    width: 90%;
     margin: 0 auto;
   }
+  .main-nav1,
+  .main-nav2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
+  .main-nav1 li,
+  .main-nav2 li {
+   margin: 0;
+  }
+  .main-nav1 .current,
+  .main-nav2 .current {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: .9em;
 }
-@media only screen and (max-width: 337px) {
-  .motto {
-    font-size: 1rem;
-  }
-} */
-/* To correct in very small screen */
 
-@media (min-width: 769px) {
-/* For larger screns */
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
- 
-  .main-slider {
-    margin: 20px 20px 10px;
-    width: 500px;
-    float: left;
-  }
-
-  .about-section {
-    padding-top: 50px;
-  }
- 
   .contact-div {
-    clear: left;
+    display: block;
   }
+
   .gallery {
     grid-template-columns: auto auto auto auto;
     margin: 0 10% 10px;
   }
-  
 }
 
-@media (min-width: 915px) {
-
-  .about-section {
-    padding-top: 100px;
+@media (min-width: 850px) {
+  .main-nav-logo img {
+    max-width: 100px;
+  }
+  .slick-slider {
+    float: left;
+    width: 65%;
+    margin-right: 5%;
   }
 
+  .about-section {
+    margin-top: 8%;
+
+  }
+  .contact-div {
+    clear: both;
+  }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 960px) {
+  .main-nav1,
+  .main-nav2 {
+    display: none;
+  }
+  .main-nav-logo {
+    flex-direction: row;
+    order: -1;
+    padding-left: 5%;
+  }
+  .merged-nav {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 5%;
+  }
+  .merged-nav li {
+    margin: 0 10px;
+    padding-bottom: 5px;
+  }
+  .merged-nav a {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .8em;
+    color: rgb(143, 141, 141);
+  }
+  .merged-nav .current {
+    color: rgb(69, 68, 68);
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: .9em;
+    border-bottom: 1.4px solid #000;
+  }
+}
 
-  .gallery-container {
-    width: 85%;
-    margin: 0 auto;
+@media (orientation: landscape) and (max-device-width: 849px) {
+  .main-header {
+    height: 70px;
   }
-  .main-slider {
-    width: 600px;
-    margin-right: 100px;
+  .main-nav1,
+  .main-nav2 {
+    display: none;
   }
-  .about-section {
-    padding-top: 180px;
+  .main-nav-logo,
+  .merged-nav {
+    display: flex;
+    flex-direction: row;
   }
-
+  .main-nav-logo {
+    margin: 5px;
+    padding-left: 2%;
+  }
+  .main-nav-logo img {
+    max-width: 60px;
+  }
+  .merged-nav {
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 2%;
+  }
+  .merged-nav li {
+    margin: 0 5px;
+    padding-bottom: 5px;
+  }
+  .merged-nav .current {
+    color: rgb(69, 68, 68);
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: .75em;
+    border-bottom: 1.4px solid #000;
+  }
+  .merged-nav a {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .7em;
+    color: rgb(143, 141, 141);
+  }
 }
