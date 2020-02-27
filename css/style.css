@@ -72,6 +72,8 @@ img {
 /* Navigation */
 .main-header,
 .logo-name,
+.main-logo,
+.santiago,
 .nav-bar {
   display: flex;
 }
@@ -84,22 +86,29 @@ img {
   z-index: 1000;
   flex-direction: column;
   margin-bottom: 30px;
+  align-items: center;
 }
 .logo-name {
+  flex: 3;
   flex-direction: row;
-  margin: 15px auto 0;
+  margin-top: 15px;
+  align-content: center;
+
 }
-.main-logo {
-  flex: 2;
-  margin: 15px 20px;
-}
+
 .main-logo img {
   max-width: 60px;
   /* filter: invert(100%); */
+  
 }
 .santiago {
-  flex: 10;
-  margin: auto;
+  margin-left: 20px;
+}
+
+.santiago h1 {
+  color: rgb(0, 0, 0);
+  font-family:  "Alcubierre", Helvetica, Arial, sans-serif;
+  font-size: 2em;
 }
 .nav-bar {
   flex-wrap: wrap;
@@ -110,9 +119,9 @@ img {
   display: inline-block;
   width: 100%;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: .15em;
   font-family: "Sinkin Sans 400", Helvetica, Arial, sans-serif;
-  font-size: .8em;
+  font-size: .7em;
   color: rgb(143, 141, 141);
   padding: 6px 5px;
 }
@@ -145,14 +154,7 @@ img {
 /* Title content */
 
 /* This is the title */
-.santiago h1 {
-  color: rgb(0, 0, 0);
-  font-family:  "Alcubierre", Helvetica, Arial, sans-serif;
-  font-size: 1.9em;
-  text-shadow: 1px 1px rgba(255, 255, 255, .4);
-  letter-spacing: 0.20rem;
-  text-indent: 0.20rem;
-}
+
 /* Subtitle */
 .motto {
   display: inline-block;
@@ -213,6 +215,7 @@ img {
   text-align: center;
 }
 .gallery-title h2 {
+  font-family: 'Sinkin Sans 300';
   display: inline-block;
   text-align: center;
   margin: 10px auto 50px;
